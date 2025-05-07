@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Wanderlust Dreams: Paris</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Dancing+Script&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Playfair Display', serif;
+    }
+
+    body {
+      background-color: #fdf6f0;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #f8e9e9;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-family: 'Dancing Script', cursive;
+      font-size: 2.5rem;
+      color: #b76e79;
+    }
+
+    nav {
+      background-color: #fff3f3;
+      display: flex;
+      justify-content: center;
+      padding: 10px 0;
+      gap: 30px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #b76e79;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #ff9999;
+    }
+
+    .hero {
+      background-image: url('https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=1350&q=80');
+      background-size: cover;
+      background-position: center;
+      height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-shadow: 2px 2px 4px #000;
+      font-size: 1.8rem;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 0 20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .main {
+      flex: 3;
+    }
+
+    .sidebar {
+      flex: 1;
+      background-color: #ffeaea;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .section {
+      margin-bottom: 30px;
+    }
+
+    .section h2 {
+      color: #b76e79;
+      margin-bottom: 10px;
+    }
+
+    .places img, .gallery img {
+      width: 100%;
+      border-radius: 10px;
+      transition: transform 0.3s;
+    }
+
+    .places img:hover, .gallery img:hover {
+      transform: scale(1.03);
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 15px;
+    }
+
+    footer {
+      background-color: #f8e9e9;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    .scroll-top {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #b76e79;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 50%;
+      font-size: 18px;
+      cursor: pointer;
+      display: none;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Wanderlust Dream: Paris</h1>
+    <p>My dreamy journey to the City of Light</p>
+  </header>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Gallery</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <div class="hero">
+    “Paris is always a good idea.”
+  </div>
+
+  <div class="container">
+    <div class="main">
+      <section class="section">
+        <h2>Why Paris?</h2>
+        <p>Paris is a city of timeless beauty, rich culture, and romantic charm. With its breathtaking architecture, world-class art, and quaint cafes, it has always captured my heart.</p>
+      </section>
+
+      <section class="section places">
+        <h2>Top 3 Places I Want to Visit</h2>
+        <ul>
+          <li><strong>Eiffel Tower</strong>: An iconic symbol of France. I want to visit at night when it's glittering with lights!</li><br>
+          <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=900&q=80" alt="Eiffel Tower">
+          <br><br>
+          <li><strong>Louvre Museum</strong>: To admire the Mona Lisa and get immersed in world-class art and history.</li><br>
+          <img src="https://images.pexels.com/photos/2363/france-landmark-lights-night.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="Louvre Museum">
+          <br><br>
+          <li><strong>Seine River</strong>: A romantic sunset cruise on the Seine River to see the magic of Paris from the water.</li><br>
+          <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/09/e4/d4/38/river-seine.jpg?w=1200&h=1200&s=1" alt="Seine River">
+        </ul>
+      </section>
+
+      <section class="section">
+        <h2>Dream Itinerary</h2>
+        <p><strong>Day 1:</strong>  Arrive in Paris, check in, visit the Eiffel Tower and enjoy coffee at a nearby Parisian café.<br>
+        <strong>Day 2:</strong> Explore the Louvre Museum, admire the artwork, then walk through Montmartre's artistic streets.<br>
+        <strong>Day 3:</strong> Take a Seine River cruise, shop at Champs-Élysées, and watch the sunset from a viewpoint.</p>
+      </section>
+
+      <section class="section gallery">
+        <h2>Paris in Pictures</h2>
+        <img src="https://media.istockphoto.com/id/680134746/photo/night-over-bridge.jpg?s=612x612&w=0&k=20&c=R-9gQar4P5AK9QeEVVs2PQnyMoGWAHPErojVPIY2kzA=" alt="Pont Alexandre III">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTr9tf81VJy5_XcHSB6CYfEaKlMT1PRmTDJfA&s" alt="Paris Street">
+        <img src="https://t4.ftcdn.net/jpg/02/94/20/07/360_F_294200770_KtitI5cOQWsZSCdXp9K1Pg7kopOsF1uQ.jpg" alt="Paris Cafe">
+        <img src="https://thumbs.dreamstime.com/b/eiffel-tower-paris-5441992.jpg" alt="Eiffel at Sunset">
+      </section>
+    </div>
+
+    <aside class="sidebar">
+      <h2>Fun Facts About Paris</h2>
+      <ul>
+        <li>The Eiffel Tower can be 15 cm taller in summer due to metal expansion.</li>
+        <li>There are over 1,800 bakeries in Paris.</li>
+        <li>Paris was originally a Roman city called “Lutetia.”</li>
+        <li>It is known as “The City of Light” because it was one of the first to adopt street lighting.</li>
+      </ul>
+      </ul>
+    </aside>
+  </div>
+
+  <footer>
+    <p><strong>About Me:</strong> I'm a travel dreamer and a web design enthusiast. This is my dream destination blog layout project!</p>
+    <p>&copy; 2025 Wanderlust Dreams</p>
+  </footer>
+
+  <button class="scroll-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">↑</button>
+
+  <script>
+    const scrollBtn = document.querySelector('.scroll-top');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 300) {
+        scrollBtn.style.display = 'block';
+      } else {
+        scrollBtn.style.display = 'none';
+      }
+    });
+  </script>
+
+</body>
+</html>
